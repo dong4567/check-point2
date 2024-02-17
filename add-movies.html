@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Movies</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Welcome to the Movies Dashboard</h1>
+        <form action="" id="add-form">
+            <div class="form-group">
+                <p><label for="input-genre">Enter gerne</label></p>
+                <input type="text" id="input-genre">
+            </div>
+            <div class="form-group">
+                <p><label for="input-name">Enter film name</label></p>
+                <input type="text" id="input-name">
+            </div>
+            <div class="form-group">
+                <p><label for="input-date">Enter year of lauch</label></p>
+                <input type="date" id="input-date">
+            </div>
+            <div class="form-group">
+                <p><label for="input-genre">Enter film descrition</label></p>
+                <input type="text" id="input-Des">
+            </div>
+            <div class="form-group">
+                <p><label for="input-genre">Enter film trailer youtube link</label></p>
+                <input type="text" id="input-link">
+            </div>
+            <button type="reset">Reset form</button>
+            <button type="submit" id="submit-btn">Add</button>
+        </form>
+    </div>
+  
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+  
+    <script src="./src/js/config.js"></script>
+    
+   <script src="./src/js/add.js"></script>
+</body>
+
+</html>
